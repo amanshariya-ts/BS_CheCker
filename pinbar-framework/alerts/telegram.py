@@ -15,9 +15,9 @@ class TelegramAlert:
     def send(self, signal) -> None:
         ts = signal.timestamp.strftime("%Y-%m-%d %H:%M UTC")
         if signal.side == "BUY":
-            header = "🟢 BUY — Bullish Liquidity"
+            header = "🟢 Bullish Liq_Cron"
         else:
-            header = "🔴 SELL — Bearish Liquidity"
+            header = "🔴 Bearish Liq_Cron"
 
         msg = (
             f"{header}\n"
